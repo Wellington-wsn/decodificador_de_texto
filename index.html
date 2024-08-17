@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="imagex/png" href="./src/img/favicon.ico">
+    <title>Desafio ONE - Decodificador de Texto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <main class="box_main">
+        <div class="logo_top">
+            <img src="./src/img/logo_alura.svg" alt="logo_alura">
+        </div>
+        
+        <div class="conteiner_input">
+            <div class="text_field">
+                <textarea name="text_field" id="input_text" placeholder="Digite seu texto"></textarea>
+            </div>
+            <div class="conteiner_info">
+                <p id="info"><i class="fa-solid fa-circle-exclamation"></i> Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="conteiner_btn">
+                <button class="btn_criptografar" id='btnCriptografar' >Criptografar</button>
+                <button class="btn_descriptografar" id='btnDescriptografar' >Descriptografar</button>
+            </div>
+        </div>
+        
+        <div class="conteiner_output" id="caixa_de_resposta">
+            <div class="response_field_standby">
+                <img class="img_standby to-hide" src="./src/img/img_standby.svg" alt="img_standby">
+                <div class="info_response to-hide">
+                    <h1>Nenhuma mensagem encontrada</h1>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="developer_info">
+            <p>Dev. Wellington S. Nascimento</p>
+            <button class="btn_github" onclick= "location.href=`https://github.com/Wellington-wsn`">
+                <i class="fa-brands fa-square-github"></i> GitHub 
+            </button>
+
+            <p>Challenge ONE 2024 - Alura</p>
+        </div>
+    </footer>
+    
+    <script src="src/index.js"></script>
+</body>
+</html>
